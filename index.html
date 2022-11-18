@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Signika:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <p class="title">Todo List</p>
+    </header>
+    <div class="wrap">
+        <div class="add_area">
+            <form class="add">
+                <input type="text" class="addList">
+            </form>
+            <button class="submitBtn">Add</button>
+            <select class="todo-filter">
+                <option  value="all">All</option>
+                <option  value="completed">Completed</option>
+                <option  value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+        <form class="todolist_container">
+            <ul></ul>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
