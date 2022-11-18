@@ -19,15 +19,10 @@ AddBtn.addEventListener("click",addTodo);
     
 
     let n = prompt("Enter your name");
-    if(n=""){
         Name.innerHTML=`${n}'s Todo List`;
-    }else{
-        
-        alert("Please enter your name");
     
     console.log(`user_name=${n}`);
 }
-    }
 getName(); 
 
 
