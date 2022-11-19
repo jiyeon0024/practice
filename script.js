@@ -24,7 +24,7 @@ AddBtn.addEventListener("click",addTodo);
         let n = prompt("Enter your name", "User");
         while(true){
             if(n!=null||undefined){
-                Name.innerHTML=`${n}'s Todo List`;
+                Name.innerHTML=`${n.toUpperCase()}'s Todo List`;
                 console.log(n);
                 return;
             }else{
@@ -32,7 +32,7 @@ AddBtn.addEventListener("click",addTodo);
                 alert("Please enter your name");
 
                 n= prompt("Enter your name", "User");
-                Name.innerHTML=`${n}'s Todo List`;
+                Name.innerHTML=`${n.toUpperCase()}'s Todo List`;
 
             }
 
