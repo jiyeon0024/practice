@@ -18,10 +18,17 @@ AddBtn.addEventListener("click",addTodo);
     function getName(){
     
 
-    let n = prompt("Enter your name");
-        Name.innerHTML=`${n}'s Todo List`;
+
     
-    console.log(`user_name=${n}`);
+    
+    let n = prompt("Enter your name");
+    while(n=true){
+        Name.innerHTML=`${n}'s Todo List`;
+        break;
+
+    }
+
+
 }
 getName(); 
 
