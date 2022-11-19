@@ -21,15 +21,29 @@ AddBtn.addEventListener("click",addTodo);
 
     
     
-    let n = prompt("Enter your name");
-    while(n=true){
-        Name.innerHTML=`${n}'s Todo List`;
-        break;
+        let n = prompt("Enter your name", "User");
+        while(true){
+            if(n!=null||undefined){
+                Name.innerHTML=`${n}'s Todo List`;
+                console.log(n);
+                return;
+            }else{
+                
+                alert("Please enter your name");
 
+                n= prompt("Enter your name", "User");
+                Name.innerHTML=`${n}'s Todo List`;
+
+            }
+
+
+    
+    
     }
-
-
 }
+
+
+
 getName(); 
 
 
